@@ -1,1 +1,11 @@
-<p>Hello, DB group!</p>
+<form>
+  <h1>Ordinance and Sentiment From Tweet Body</h1>
+  <textarea name="tweet-body" id="tweet-body" cols="50" rows="4">
+    <%= tweet_body %>
+  </textarea>
+  <br>
+  <input type="submit">
+</form>
+
+<p><%= tweet_body %></p>
+<p><%= CGI.escape_html ordinances.pretty_inspect %></p>
