@@ -1,10 +1,11 @@
 # Partial Implementation of Mapping Ordinances and Tweets using Smart City Characteristics to Aid Opinion Mining
-## Usage
+## Usage in Development
 ```bash
 # Ensure recent ruby and bundler installed
 # i.e. brew install ruby && gem install bundler
 $ bundle
-$ rerun rackup
+# Set GOOGLE_APPLICATION_CREDENTIALS to the Google service json file
+$ env GOOGLE_APPLICATION_CREDENTIALS=google_credentials.json rerun rackup
 # Navigate to URL printed to console
 ```
 
