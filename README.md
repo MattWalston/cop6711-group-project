@@ -1,12 +1,13 @@
 # Partial Implementation of Mapping Ordinances and Tweets using Smart City Characteristics to Aid Opinion Mining
 ## Usage
-~~~~
+```bash
 # Ensure recent ruby and bundler installed
 # i.e. brew install ruby && gem install bundler
 $ bundle
 $ rerun rackup
 # Navigate to URL printed to console
-~~~~
+```
+
 ## Limitation of Scope
 Due to reasonable time constraints of a semester-long course and the focus on course objectives and outcomes, we are implementing the side of the paper which associates sentiment to mentions of a specific ordinance.
 
