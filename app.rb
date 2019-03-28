@@ -1,19 +1,6 @@
 require 'sinatra'
 require 'google/cloud/language'
 
-require 'logger'
-
-module MyLogger
-  LOGGER = Logger.new $stderr, level: Logger::WARN
-  def logger
-    LOGGER
-  end
-end
-
-module GRPC
-  extend MyLogger
-end
-
 get '/' do
   tweet_body = params['tweet-body'].strip
   response = ''
