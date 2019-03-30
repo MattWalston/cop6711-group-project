@@ -6,7 +6,7 @@ THRESHOLD_DENSITY = 0.15 # TODO: Not yet implemented
 
 $tokenizer = Tokenizer::WhitespaceTokenizer.new
 
-class Tweet
+class Subject
   attr_reader :body, :parsed
 
   def initialize(body)
