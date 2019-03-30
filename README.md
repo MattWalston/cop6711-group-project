@@ -1,12 +1,22 @@
 # Partial Implementation of Mapping Ordinances and Tweets using Smart City Characteristics to Aid Opinion Mining
-## Usage in Development
+## Requirements
+Current ruby and bundler.
 ```bash
-# Ensure recent ruby and bundler installed
-# i.e. brew install ruby && gem install bundler
-$ bundle
-# Set GOOGLE_APPLICATION_CREDENTIALS to the Google service json file
-$ env GOOGLE_APPLICATION_CREDENTIALS=google_credentials.json rerun rackup
-# Navigate to URL printed to console
+brew install ruby # or your OS's equivelant means of installing ruby > 2.5
+gem install bundler
+bundle
+```
+## Web
+Launch web server and open browser at appropriate URL (often http://localhost:4567)
+```bash
+./web.rb
+```
+
+## Text
+Either pipe a term in or supply interactively.
+
+```bash
+./tui.rb
 ```
 
 ## Limitation of Scope

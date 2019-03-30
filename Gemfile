@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'google-cloud-language'
+gem 'stemmify'
+gem 'tokenizer'
 
 group :development do
-  gem 'rerun'
+  gem 'pry'
 end
