@@ -1,10 +1,16 @@
-require 'pry'
+#!/usr/bin/env ruby
+
+require 'pry' if ENV['RUBY_ENV'] == 'development'
 
 require_relative 'subject'
 require_relative 'terms'
 
-# TODO: make dynamic
-tweet = Subject.new "I want some damn ecology sentience in my backyard from some awareness."
+puts "Supply message to parse (LF submits):" if STDIN.tty?
+body = gets
+
+tweet = Subject.new body
+
 related_features = tweet.related_to_features Terms.instance.terms
-puts related_features
+
+puts related_features.count > 1 ? related_features : 'No features identified.'
 
