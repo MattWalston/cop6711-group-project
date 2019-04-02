@@ -1,14 +1,10 @@
 <form>
-  <h1>Terms from Body</h1>
-  <textarea name="body" id="body" cols="50" rows="4">
-    <%= body %>
-  </textarea>
+  <h1>SCC Component from Tweet</h1>
+  <input name="body" id="body" value="<%= body %>">
   <br>
   <input type="submit">
 </form>
 
-<ul>
-  <% terms.each do |term| %>
-    <li><%= term %></li>
-  <% end %>
-</ul>
+<p class="result">
+  <%= term %>
+</p>
