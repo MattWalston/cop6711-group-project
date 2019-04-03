@@ -217,9 +217,7 @@ terms = {
                'protection', 'hire', 'human action', 'livingaccommodations', 'digging', 'workplac', 'inebriant']
 }
 
-text = """
-Without speeding, my commute was cut in half with the new light rail.
-"""
+text = input("Input text to analyze: ")
 
 filtered_tokens = []
 for w in word_tokenize(text):
